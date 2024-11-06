@@ -1,12 +1,12 @@
 {
 	"name": "directus-extension-brl-interface",
-	"version": "1.1.2",
+	"version": "2.0.0",
 	"description": "Interface for Brazilian currency",
 	"author": {
 		"email": "hello@brunoribei.ro",
 		"name": "Bruno Ribeiro"
 	},
-	"license": "gpl-3.0",
+	"license": "GPL-3.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/brunribeiro/directus-extension-brl-interface.git"
@@ -14,9 +14,12 @@
 	"keywords": [
 		"directus",
 		"directus-extension",
-		"directus-custom-interface"
+		"directus-custom-interface",
+		"currency",
+		"BRL",
+		"Brazilian Real"
 	],
-	"directus:extension": {
+	"directus": {
 		"type": "interface",
 		"path": "dist/index.js",
 		"source": "src/index.ts",
@@ -24,10 +27,11 @@
 	},
 	"scripts": {
 		"build": "directus-extension build",
-		"dev": "directus-extension build -w --no-minify"
+		"dev": "directus-extension build -w --no-minify",
+		"prepublishOnly": "npm run build"
 	},
 	"devDependencies": {
-		"@directus/extensions-sdk": "9.10.0",
+		"@directus/extensions-sdk": "^9.10.0",
 		"typescript": "^4.8.4",
 		"vue": "^3.2.41"
 	}
