@@ -1,10 +1,7 @@
-[![npm version](https://badge.fury.io/js/directus-extension-brl-interface.svg)](https://badge.fury.io/js/directus-extension-brl-interface)
-
 # Introduction
 
 A [Directus](https://github.com/directus/directus) interface extension that displays brazilian currency value properly.
 
-![](./screenshots/demo.gif)
 
 # Installation
 
